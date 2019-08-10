@@ -1,34 +1,30 @@
 node {
    
-   stage('Code checkout') { // for display purposes
-    git 'https://github.com/itrainjaquar/maven_apps.git'  
+   
+   stage('Code Checkout') {
+      
    }
-   stage('Build') {
-     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-      sh 'mvn clean compile'
-     }
+   stage('Compile') {
    }
-   stage('Unit test') {
-     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-      sh 'mvn test'
-     }
+   stage('Unit Test') {
+      
    }
-   stage('Package') {
-     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-      sh 'mvn package'
-     }
+   stage('Code analysis') {
+      
+   }
+   stage('Archive') {
+      
+   }
+   stage('Build Docker image') {
+      
+   }
+   stage('Push Docker image') {
+      
    }
    stage('Deploy to Dev') {
-    
-   }
-   stage('Deploy to Test') {
-    
-   }
-   stage('Deploy to Stage') {
-    
+      
    }
    stage('Deploy to Prod') {
-    
+      
    }
-   
 }
