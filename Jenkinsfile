@@ -4,9 +4,10 @@ node {
      git credentialsId: 'githubID', url: 'https://github.com/itrainjaquar/maven_apps.git' 
    }
    stage('Compile') {
+      sh 'mvn clean compile'
    }
    stage('Unit Test') {
-      
+     sh 'mvn test' 
    }
    stage('Code analysis') {
       
