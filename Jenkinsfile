@@ -1,6 +1,5 @@
 node {
    
-   
    stage('Code Checkout') {
       
    }
