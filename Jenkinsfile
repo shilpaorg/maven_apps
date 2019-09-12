@@ -1,6 +1,6 @@
 node {
    
-   stage('Code Checkout') {
+   stage('Code Checkoutt') {
      git credentialsId: 'githubID', url: 'https://github.com/itrainjaquar/maven_apps.git' 
    }
    stage('Compile') {
