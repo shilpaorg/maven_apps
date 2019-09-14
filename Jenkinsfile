@@ -29,7 +29,7 @@ node {
    stage('Deploy to Dev') {
       
    }
-   stage('Deploy to Prod of') {
+   stage('Deploy to Proda of') {
       
    }
 }
